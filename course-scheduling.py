@@ -133,25 +133,25 @@ class genetic:
             self.population = newpop
         return bestSchedule
     
-if __name__ == '__main__':
-    schedules = []
-    # add schedule
-    #Schedule(course,class,prof)
-    schedules.append(Schedule('IS', 'CLASSA', 'Dr Ahmed'))
-    schedules.append(Schedule('IS', 'CLASSC', 'Dr Ahmed'))
-    schedules.append(Schedule('AI', 'CLASSA', 'Dr Ali'))
-    schedules.append(Schedule('AI', 'CLASSA', 'Dr Ali'))
-    schedules.append(Schedule('CS', 'CLASSC', 'Dr Sara'))
-    schedules.append(Schedule('CS', 'CLASSA', 'Dr Sara'))
-    schedules.append(Schedule('IT', 'CLASSA', 'Prof Mai'))
-    schedules.append(Schedule('IT', 'CLASSC', 'Prof Mai'))
 
-    schedules.append(Schedule('AI', 'CLASSB', 'Dr Ali'))
-    schedules.append(Schedule('AI', 'CLASSB', 'Dr Ali'))
-    schedules.append(Schedule('SE', 'CLASSC', 'Dr M'))
-    schedules.append(Schedule('SE', 'CLASSB', 'Dr M'))
-    schedules.append(Schedule('IT', 'CLASSB', 'Prof Mai'))
-    schedules.append(Schedule('IT', 'CLASSC', 'Prof Mai'))
+schedules = []
+# add schedule
+#Schedule(course,class,prof)
+schedules.append(Schedule('IS', 'CLASSA', 'Dr Ahmed'))
+schedules.append(Schedule('IS', 'CLASSC', 'Dr Ahmed'))
+schedules.append(Schedule('AI', 'CLASSA', 'Dr Ali'))
+schedules.append(Schedule('AI', 'CLASSA', 'Dr Ali'))
+schedules.append(Schedule('CS', 'CLASSC', 'Dr Sara'))
+schedules.append(Schedule('CS', 'CLASSA', 'Dr Sara'))
+schedules.append(Schedule('IT', 'CLASSA', 'Prof Mai'))
+schedules.append(Schedule('IT', 'CLASSC', 'Prof Mai'))
 
-    ga = genetic(popsize=20, best=5, maxit=200)
-    res = ga.evolution(schedules, 3)
+schedules.append(Schedule('AI', 'CLASSB', 'Dr Ali'))
+schedules.append(Schedule('AI', 'CLASSB', 'Dr Ali'))
+schedules.append(Schedule('SE', 'CLASSC', 'Dr M'))
+schedules.append(Schedule('SE', 'CLASSB', 'Dr M'))
+schedules.append(Schedule('IT', 'CLASSB', 'Prof Mai'))
+schedules.append(Schedule('IT', 'CLASSC', 'Prof Mai'))
+
+ga = genetic(popsize=20, best=5, maxit=200)
+res = ga.evolution(schedules, 3)
